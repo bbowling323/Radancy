@@ -1,0 +1,226 @@
+/* thanks for the opportunity to code!*/
+
+/*the big quotes are here but I am not really confident that I could code them on my own: http://jsfiddle.net/enigmarm/BpTdL/*/
+
+
+:root{
+
+    --bank-green: rgb(19, 189, 84)
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    
+}
+h1{
+    color: var(--bank-green);
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.text{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+
+.header{
+    color: var(--bank-green);
+    top: 10px;
+    left:100px;
+    font-size: 40px;
+    }
+
+img{
+    height: 5em;
+    width: 5em;
+}
+
+.happy-employee{
+
+width: 100vw;
+height: 400px;
+}
+
+.heading-two, .heading-three{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#divider, #divider-two{
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    background-color:#FF0000;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.description-one{
+font-weight: 200;
+line-height: 40px;
+
+
+}
+
+.button-one{
+    text-align: center;
+}
+button{
+    border: none;
+    height: 57px;
+    width: 200px;
+}
+
+strong{
+    color:var(--bank-green);
+}
+
+
+.column, .row-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1, .column-2, .column-3, .column-4{
+    margin-right: 50px;
+    margin-left: 8px;
+    width: 50%;
+    height: auto;
+    line-height: 30px;
+    font-weight: normal;
+}
+#middle-h1{
+    color: var(--bank-green);
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--bank-green);
+}
+
+h4{
+    background-color: var(--bank-green);
+    color: white;
+    text-align: center;
+    height: auto;
+    line-height: 30px;
+    margin: 0;
+}
+
+
+.loan-text{
+    color:black;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgb(211, 211, 211); 
+    padding-bottom: 20px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+.loan{
+    margin-bottom: 20px;
+}
+
+.column-photos{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1-photos, .column-2-photos, .column-3-photos{
+
+    width: 33%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image{
+    border-radius: 50%;
+}
+figcaption{
+    font-style: italic;
+}
+cite{
+    font-style: normal;
+    color: var(--bank-green);
+}
+div.column-photos{
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: dotted;
+}
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+  }
+
+.fa-facebook {
+    background:blue;
+    color: white;
+  }
+
+  .fa-twitter{
+    background: #ADD8E6;
+    color: white;
+  }
+
+  .fa-linkedin{
+    background: #00008B;
+    color: white;
+  }
+  .fa-youtube{
+    background: red;
+    color: white;
+  }
+
+
+
+.footer-final{
+
+    color: black;
+}
+
+@media (max-width: 480px) {
+    .column, .row-2, .column-photos, .header  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    }
+
+    @media (max-width: 480px) {
+        .column-1, .column-2, .column-3, .column-4, .column-1-photos, .column-2-photos, .column-3-photos, .column-photos, h1, .happy-employee {
+            height: fit-content;
+            width: fit-content;
+        }
+    
+        }
+
+        @media (max-width: 480px) {
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
