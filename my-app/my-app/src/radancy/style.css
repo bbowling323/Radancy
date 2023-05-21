@@ -21,11 +21,6 @@ h1{
     color: var(--bank-green);
 }
 
-.image{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 .text{
     font-size: 20px;
     padding-left: 20px;
@@ -47,8 +42,9 @@ img{
 
 .happy-employee{
 
-width: 100vw;
-height: 400px;
+width: 100%;
+height: 100%;
+object-fit: contain;
 }
 
 .heading-two, .heading-three{
@@ -207,20 +203,41 @@ footer{
         align-items: center;
     }
 
-    }
-
-    @media (max-width: 480px) {
-        .column-1, .column-2, .column-3, .column-4, .column-1-photos, .column-2-photos, .column-3-photos, .column-photos, h1, .happy-employee {
-            height: fit-content;
-            width: fit-content;
-        }
     
-        }
 
-        @media (max-width: 480px) {
+  
+
+    
         .container{
             display: flex;
             align-items: center;
             justify-content: center;
+            object-position: right 100%;
         }
-    }
+        .column-1-photos, .column-2-photos, .column-3-photos{
+
+            width: 100%;
+            height: auto;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .column-1, .column-2, .column-3, .column-4{
+            width: 100%;
+            height: auto;
+            line-height: 30px;
+            font-weight: normal;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+}    
+     /*   .happy-employee{
+            object-fit: none;
+            object-position: 223px;
+            width: 100%;
+            height: auto;
+
+        ****couldn't figure out how to crop the picture for mobile -- sorry 
+            
+        }/*
+        
+    
